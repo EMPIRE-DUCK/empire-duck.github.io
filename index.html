@@ -22,10 +22,10 @@
 		
 		<script>
 			function save() {
-				
+				localStorage.setItem("cookiecount", cookiecount);
 			}
 			function load(){
-
+				cookiecount = localStorage.getItem("cookiecount");
 
 			}
 		</script>
