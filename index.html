@@ -2,7 +2,7 @@
 <script>
 	var cookiecount = 0;
     function update(){
-        
+        document.getElementById("text").value = cookiecount;
     }
     
     
@@ -136,14 +136,31 @@
 		    <script>
 			    function add() {
 				cookiecount = cookiecount + 1
-				document.getElementById("text").value = cookiecount;
+				update();
 			    }
 
 		        </script>
 		     <br></br>
 		     <a href="#" onclick="add()"><img width="250" height="250" src="sqwbTlhrJIo.jpg"></a>
              <br></br>
-             <a href="#" class="button">BUY 1 AUTO CLICKER</a>
+             <a href="#" class="button" onclick="buyAuto">КУПИТЬ 1 AUTO CLICKER</a>
+             <p id="clickers">Стоимость: Печенек</p>
+             <p id="value">У тебя 0 автокликеров</p>
+             <script>
+                 function buyAuto{
+                     if (cookiecount >= ((autoclick+1) * 12)){
+                         cookiecount - ((autoclick+1) * 12)
+                         autoclick = autoclick + 1;
+                         update();
+                         
+                         
+                         
+                     }
+                 }
+                 
+                 
+                 
+             </script>
              
 		
         </div>
