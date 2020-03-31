@@ -5,36 +5,41 @@
 
 </script>
 <html>
-	<body class="main">
-		
-		
-		You are Got:
-		<input type="text " id="text" disabled style="text-align:center"> </input>
-		<script>
-			function add() {
+	<body>
+        <div>
+            You are Got:
+		    <input type="text " id="text" disabled style="text-align:center"> </input>
+			    function add() {
 				cookiecount = cookiecount + 1
 				document.getElementById("text").value = cookiecount;
-			}
+			    }
 
-		</script>
-		<br></br>
-		<a href="#" onclick="add()"><img src="sqwbTlhrJIo.jpg"></img></a>
+		        </script>
+		     <br></br>
+		     <a href="#" onclick="add()"><img src="sqwbTlhrJIo.jpg"></img></a>
 		
-		<script>
-			function save() {
-				localStorage.setItem("cookiecount", cookiecount);
-			}
-			function load(){
-				cookiecount = localStorage.getItem("cookiecount");
-                cookiecount = parseInt(cookiecount);
-                document.getElementById("text").value = cookiecount;
+		    <script>
+			    function save() {
+				   localStorage.setItem("cookiecount", cookiecount);
+			    }
+			    function load(){
+				   cookiecount = localStorage.getItem("cookiecount");
+                   cookiecount = parseInt(cookiecount);
+                   document.getElementById("text").value = cookiecount;
 
-			}
-		</script>
-		<br></br>
+			    }
+		    </script>
+		    <br></br>
 
-		<button href="#" onclick="load()">LOAD</button>
-		<button onclick="save()">SAVE</button>		
+		    <button href="#" onclick="load()">LOAD</button>
+		    <button onclick="save()">SAVE</button>
+
+
+
+        </div>
+		
+		
+		
 
 		
 
