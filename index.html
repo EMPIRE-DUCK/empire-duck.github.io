@@ -26,6 +26,8 @@
 			}
 			function load(){
 				cookiecount = localStorage.getItem("cookiecount");
+                cookiecount = parseInt(cookiecount);
+                document.getElementById("text").value = cookiecount;
 
 			}
 		</script>
