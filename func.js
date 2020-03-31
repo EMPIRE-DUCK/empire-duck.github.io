@@ -1,4 +1,4 @@
-alert("Currently in beta,so under development^^");
+
 
 var x=0;
 var lv=1;
