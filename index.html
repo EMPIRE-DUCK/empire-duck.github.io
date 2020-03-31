@@ -4,6 +4,22 @@
 	var c = ""
 
 </script>
+
+<style>
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    
+    
+}
+    .body{
+    
+        background: black;
+}
+
+</style>
 <html>
 	<body>
         <div class="main">
@@ -18,25 +34,8 @@
 		        </script>
 		     <br></br>
 		     <a href="#" onclick="add()"><img src="sqwbTlhrJIo.jpg"></img></a>
+             <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
 		
-		    <script>
-			    function save() {
-				   localStorage.setItem("cookiecount", cookiecount);
-			    }
-			    function load(){
-				   cookiecount = localStorage.getItem("cookiecount");
-                   cookiecount = parseInt(cookiecount);
-                   document.getElementById("text").value = cookiecount;
-
-			    }
-		    </script>
-		    <br></br>
-
-		    <button href="#" onclick="load()">LOAD</button>
-		    <button onclick="save()">SAVE</button>
-
-
-
         </div>
 		
 		
