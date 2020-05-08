@@ -32,11 +32,7 @@
         background-color: black;
         width: 500px;
         height: 500px;
-        .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}    
+    
     }
 
     </style>
@@ -47,16 +43,25 @@
             document.getElementById("clicksl").value = clicks
         }
         
+        function save() {
+            sessionStorage.setItem("clicks", clicks)
+        }
+        function load() {
+            clicks =  sessionStorage.getItem("clicks")
+            clicks = parseInt(clicks)
+            document.getElementById('clicksl').value = clicks;
+            document.title = clicks + " cookies"
+        }
     </script>
 </head>
 <body>
     <div class="parent">
         <input type="text" disabled value="0" id="clicksl">
         <button class="btn" onclick="beebee()">CLICK ME</button>
-        
+        <button class="btn" onclick="save()">СОХРАНИТЬ</button>
+        <button class="btn" onclick="load()">ЗАГРУЗИТЬ</button>
+
     </div>
-    <div class="shop" id="pp">
-        <button class="btt">shshsh</button>
-    </div>
+    
 </body>
 </html>
